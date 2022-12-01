@@ -80,7 +80,7 @@ class GamePlay extends JPanel implements ActionListener,KeyListener{
         map.draw((Graphics2D)g);
 
         g.setColor(Color.red);
-        g.fillOval(ballPasX,ballPasY,20,20);
+        g.fillOval(ballPasX,ballPasY,40,40);
 
         g.setColor(Color.green);
         g.setFont(new Font("serif", Font.BOLD,20));
@@ -119,12 +119,12 @@ class GamePlay extends JPanel implements ActionListener,KeyListener{
     private void moveLeft()
     {
         play=true;
-        playerX -=20;
+        playerX -=40;
     }
     private void moveRight()
     {
         play=true;
-        playerX +=20;
+        playerX +=40;
     }
 
 
